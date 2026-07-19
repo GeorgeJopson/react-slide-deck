@@ -1,6 +1,6 @@
 {
   "name": "@george-jopson/react-slide-deck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small package allowing you to create a slide deck using React!",
   "homepage": "https://github.com/GeorgeJopson/react-slide-deck#readme",
   "bugs": {
@@ -12,9 +12,16 @@
   },
   "license": "ISC",
   "author": "George Jopson",
-  "type": "module",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "predev": "rimraf .parcel-cache dist",
+    "build": "parcel build",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
@@ -25,6 +32,7 @@
     "eslint": "^8.49.0",
     "eslint-config-react-app": "^7.0.1",
     "new-component": "5.0.2",
+    "parcel": "^2.12.0",
     "prettier": "2.6.2",
     "process": "0.11.10",
     "react": "^19.2.0",
