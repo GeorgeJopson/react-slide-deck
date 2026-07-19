@@ -12,6 +12,12 @@
   },
   "license": "ISC",
   "author": "George Jopson",
+  "keywords": [
+    "react",
+    "slide",
+    "deck",
+    "slide-deck"
+  ],
   "source": "index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
