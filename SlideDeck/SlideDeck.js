@@ -2,8 +2,8 @@ import React from 'react';
 import useKeyDrivenCounter from "./use-key-driven-counter";
 import styles from './SlideDeck.module.css';
 import {boundValue} from "./helpers";
-import OffsetForm from "./OffsetForm";
-import Slide from "./Slide";
+import OffsetForm from "../OffsetForm/OffsetForm";
+import Slide from "../Slide";
 
 
 function SlideDeck({slides, defaultStateful}) {

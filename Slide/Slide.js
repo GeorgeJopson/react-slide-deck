@@ -1,17 +1,5 @@
 import React, {Activity, isValidElement} from 'react';
 
-function StatelessSlide({children}){
-  return children;
-}
-StatelessSlide.__stateful = false;
-
-function StatefulSlide({children}) {
-  return children;
-}
-StatefulSlide.__stateful = true;
-
-export {StatelessSlide, StatefulSlide};
-
 function Slide({visible, defaultStateful, children}) {
   let maintainState = defaultStateful;
 
