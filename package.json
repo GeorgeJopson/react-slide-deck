@@ -1,5 +1,5 @@
 {
-  "name": "react-slide-deck",
+  "name": "@george-jopson/react-slide-deck",
   "version": "1.0.0",
   "description": "A small package allowing you to create a slide deck using React!",
   "homepage": "https://github.com/GeorgeJopson/react-slide-deck#readme",
